@@ -35,7 +35,7 @@ class LoginPage
         visit 'http://the-internet.herokuapp.com/secure'
         end
 
-        def retorna_pagina_login
+        def retorna_pagina_login #
             page.has_content?('You must login to view the secure area!') 
         end
 end
